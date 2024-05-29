@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { program } from 'commander';
-import readFile from '../index.js';
+import getDiff from '../index.js';
 
 program
   .name('gendiff')
@@ -9,8 +9,7 @@ program
   .option('-f, --format [type]', 'output format')
   .arguments('<filepath1> <filepath2>')
   .action((filepath1, filepath2) => {
-    console.log(readFile(filepath1));
-    console.log(readFile(filepath2));
+    console.log(getDiff(filepath1, filepath2));
   })
 
 program.parse();

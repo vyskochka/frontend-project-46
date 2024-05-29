@@ -1,3 +1,3 @@
-import readFile from "./src/readFile.js";
+import getDiff from "./src/getDiff.js";
 
-export default readFile;
+export default getDiff;
