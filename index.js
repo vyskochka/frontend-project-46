@@ -1,3 +1,3 @@
-import getDiff from "./src/getDiff.js";
+import { getDiff } from './src/getDiff.js';
 
 export default getDiff;

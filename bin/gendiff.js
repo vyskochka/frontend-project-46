@@ -10,6 +10,6 @@ program
   .arguments('<filepath1> <filepath2>')
   .action((filepath1, filepath2) => {
     console.log(getDiff(filepath1, filepath2));
-  })
+  });
 
 program.parse();
